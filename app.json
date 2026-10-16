@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "codexgram",
+    "slug": "codexgram",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "codexgram",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "icon": "./assets/images/logo.png",
+      "bundleIdentifier": "com.burakorkmez.codexgram",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "appleTeamId": "9NSCVL7862"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/logo.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.burakorkmez.codexgram"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/logo.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-secure-store",
+      "@clerk/expo",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose photos and videos for your Codexgram posts, stories, and profile.",
+          "cameraPermission": "Take photos for your Codexgram posts and stories.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-video",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "codexgram",
+          "organization": "codesistency-gs"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b4bbfd4e-acc0-4079-8584-78850ec873b9"
+      }
+    }
+  }
+}
