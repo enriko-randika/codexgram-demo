@@ -8,7 +8,7 @@ export function AppTabs() {
       <FeedProvider>
         <NativeTabs tintColor="#087EFF" iconColor={{ default: '#727E94', selected: '#087EFF' }} labelStyle={{ default: { color: '#727E94' }, selected: { color: '#087EFF' } }} backgroundColor="transparent" shadowColor="transparent">
           <NativeTabs.Trigger name="home" disableAutomaticContentInsets>
-            <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
+            <NativeTabs.Trigger.Label>Feed</NativeTabs.Trigger.Label>
             <NativeTabs.Trigger.Icon sf={{ default: 'house', selected: 'house.fill' }} md="home" />
           </NativeTabs.Trigger>
           <NativeTabs.Trigger name="messages" disableAutomaticContentInsets>
