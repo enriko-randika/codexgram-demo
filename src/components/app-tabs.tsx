@@ -12,7 +12,7 @@ export function AppTabs() {
             <NativeTabs.Trigger.Icon sf={{ default: 'house', selected: 'house.fill' }} md="home" />
           </NativeTabs.Trigger>
           <NativeTabs.Trigger name="messages" disableAutomaticContentInsets>
-            <NativeTabs.Trigger.Label>Messages</NativeTabs.Trigger.Label>
+            <NativeTabs.Trigger.Label>Chats</NativeTabs.Trigger.Label>
             <NativeTabs.Trigger.Icon sf={{ default: 'bubble.left', selected: 'bubble.left.fill' }} md="chat_bubble" />
           </NativeTabs.Trigger>
           <NativeTabs.Trigger name="explore" disableAutomaticContentInsets>

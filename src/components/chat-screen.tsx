@@ -70,7 +70,7 @@ export function ChatScreen({ onBack, messages, setMessages, peer, onSend, before
   return <KeyboardAvoidingView style={[styles.screen, { paddingTop: insets.top }]} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
     <StatusBar style="dark" />
     <View style={[styles.header, { height: 62 * v, paddingBottom: 8 * v, paddingHorizontal: fs(12), gap: fs(12) }]}>
-      <Pressable accessibilityRole="button" accessibilityLabel="Back to messages" onPress={onBack} hitSlop={10}><FeedIcon name="back" size={fs(20)} /></Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel="Back to chats" onPress={onBack} hitSlop={10}><FeedIcon name="back" size={fs(20)} /></Pressable>
       <View style={{ marginLeft: fs(14) }}>{peer ? peer.avatar(fs(49)) : <Image source={chatAvatar} style={{ width: fs(49), height: fs(49), borderRadius: fs(25) }} />}</View>
       <View style={{ flex: 1, gap: 4 * v }}><Text style={{ color: '#090E29', fontSize: fs(17), fontWeight: '700', letterSpacing: -0.5 }} numberOfLines={1}>{peer?.name ?? 'alex.rivera'}</Text><View style={{ flexDirection: 'row', gap: fs(5), alignItems: 'center' }}>{!live && <View style={{ width: fs(8), height: fs(8), borderRadius: fs(4), backgroundColor: '#18CB2E' }} />}<Text style={{ color: '#8A90A7', fontSize: fs(12) }}>{live ? 'Private conversation' : 'Online'}</Text></View></View>
       <Pressable accessibilityRole="button" accessibilityLabel="Voice call" onPress={() => Alert.alert('Voice calls', 'Calling is not available yet.')} hitSlop={8}><FeedIcon name="phone" size={fs(21)} color="#090E29" /></Pressable>
